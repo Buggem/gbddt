@@ -4,7 +4,7 @@
 // I didn't bother with putting boring code in the program, so just read it for yourself
 window.gbDDT = {
 	'isHex': function(num) {
-		return Boolean(('0x' + num).match(/^0x[0-9a-f]+$/i))
+		return Boolean((num).match(/^[0-9a-f]+$/i))
 	},
 	'line': class {
 		constructor(hexastr) {
